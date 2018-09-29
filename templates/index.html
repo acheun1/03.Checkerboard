@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkerboard 2018 09 27 Cheung A</title>
+    <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        outline:1px solid red;
+    }    
+    body {
+        background-color:white;
+        height: {{height}};
+        width: {{width}};
+    }
+    div.even {
+        background-color: black;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        color: black;
+        margin: 0px 0px 3px 0px;
+        padding: 0px;
+        vertical-align:top;
+    }
+    div.odd{
+        background-color:red;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        color: red;
+        margin: 0px 0px 3px 0px;
+        padding: 0px;
+        vertical-align:top;
+    }
+    </style>
+</head>
+<body>
+    {% for i in range(4): %}
+    <div class="even">e</div>
+    <div class="odd">o</div> 
+    <div class="even">e</div>
+    <div class="odd">o</div>      
+    <div class="even">e</div>
+    <div class="odd">o</div>  
+    <div class="even">e</div>
+    <div class="odd">o</div>      
+    <div class="odd">o</div> 
+    <div class="even">e</div>
+    <div class="odd">o</div>      
+    <div class="even">e</div>
+    <div class="odd">o</div>  
+    <div class="even">e</div>
+    <div class="odd">o</div>      
+    <div class="even">e</div>    
+    {% endfor %}    
+    <!-- {% for i in range(64): %}
+        {% if i%2==0 %}
+        <div class="even">e</div>
+        {% endif %}    
+    {% endfor %}
+    {% for i in range(64): %}
+        {% if i%2==1 %}
+        <div class="odd">o</div>
+        {% endif %}    
+    {% endfor %}     -->
+</body>
